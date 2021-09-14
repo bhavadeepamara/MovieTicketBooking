@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body {
+background-image:url("background image.jpg");
+}
+h1 {
+font-size: 50px;
+margin-left:100px;
+text-align: center;
+height: 110px;
+width: 2.3%;
+color: red;
+}
+#input {
+margin-left: 550px;
+line-height: 1.75;
+text-align: center;
+width: 20%;
+padding: 13px 20px;
+font-size: 20px;
+border: 2px solid black;
+background-color: blue;
+}
+</style>
+<title>
+home page
+</title>
+</head>
+<body>
+<h1>LOVELY MOVIES</h1>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div id="input">
+<form>
+<strong>Username</strong>
+<input type="text" name="userid"><br>
+<strong>Password </strong>
+<input  type="password" name="paswd" ></br>
+<input  type="button" value="log in" onclick="check(this.form)">
+</form>
+<script>
+var user=["nikhil","bhava","mam"];
+var pass=["nikhil123","bhava123","mam123"];
+var i,j=0;
+ function check(form)
+{
+for(i=0;i<3;i++)
+{
+if(form.userid.value==user[i]&&form.paswd.value==pass[i])
+{
+window.open("movie.html");
+}
+}
+
+if(j==0)
+{alert("Wrong username or password");}
+}
+</script>
+<div>
+</body>
+</html>

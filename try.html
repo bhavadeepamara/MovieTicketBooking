@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style> 
+body {
+background-image:url("background image.jpg");
+background-size:100%;
+}
+
+h1 {
+font-size: 50px;
+margin-left:100px;
+text-align: center;
+height: 110px;
+width: 2.3%;
+color: red;
+}
+#input {
+font-size: 20px;
+border: 2px solid black;
+background-color: yellow;
+line-height: 1.5;
+padding: 20px 20px;
+width: 25%;
+margin-left: 415px;
+text-align: center;
+}
+</style>
+<title>
+home page
+</title>
+</head>
+<body>
+<h1>LOVELY MOVIES</h1>
+<div id="input">
+<fieldset>
+<form>
+
+<ol>
+<li><solong>First name</solong></li>
+<li><input type="text" name="fname" required /></li>
+</ol>
+<ol>
+<li><solong>Last name</solong></li>
+<li><input type="text" name="lname" required /></li>
+</ol>
+<ol>
+<li><solong>Date of birth</solong></li>
+<li><input type="date" name="dob" required /></li>
+</ol>
+<ol>
+<li><solong>Email id</solong></li>
+<li><input type=email name=email placeholder="example@domain.com" required /></li>
+</ol>
+<ol>
+<li><solong>Gender</solong></li>
+<li><select name="gender">
+<option value="male"><solong>Male</option>
+<option value="female"><solong>Female</option>
+<option value="other"><solong>Other</option>
+<select></li>
+</ol>
+<ol>
+<li><solong>Phone number</solong></li>
+<li><input type="number"  name="phoneno" placeholder="Eg. +91 000 000 0000" required autofocus></li>
+</ol>
+<ol>
+<li><solong>User name</solong></li>
+<li><input type="text" name="uname" required></li>
+</ol>
+<ol>
+<li><solong>Password</solong></li>
+<li><input type="password" name="passwd" required></li>
+</ol>
+</table>
+<input type="button" value="Sign in" onclick="signin()" required>
+</form>
+</fieldset>
+<fieldset>
+<button type=submit>Pay Now</button>
+            <button type=submit><a href="home.html">Proceed</a></button><br>
+</fieldset>
+<script>
+function signin()
+{
+alert("account created successfully");
+window.open("home.html"); 
+}
+
+
+</script> 
+
+<div>
+</body>
+</html>

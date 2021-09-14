@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Credit Card Payment</title>
+
+</head>
+<body bgcolor="powderblue">
+<center><h1><b><u>CREDIT CARD PAYMENT</u></b></h1></center>
+    <section>
+    <form id=payment>
+        <fieldset>
+            <ol>
+                <li>
+                    <label for=name>Name</label>
+
+                    <input id=name name=name type=text placeholder="First and last name" required autofocus />
+                </li><br>
+                <li>
+                    <label for=email>Email</label>
+                    <input id=email name=email type=email placeholder="example@domain.com" required />
+                </li><br>
+                <li>
+                    <label for=phone>Phone</label>
+                    <input id=phone name=phone type=number placeholder="Eg. +91 000 000 0000" required />
+                </li><br>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Card Details</legend>
+            <ol>
+             <li>
+                <fieldset>
+                    <legend>Card Type</legend>
+                    <ol>
+                        <li>
+                            <input id=visa name=cardtype type=radio />
+                            <label for=visa>VISA</label>
+                        </li>
+                        <li>
+                            <input id=amex name=cardtype type=radio />
+                            <label for=amex>Rupay</label>
+                        </li>
+                        <li>
+                            <input id=mastercard name=cardtype type=radio />
+                            <label for=mastercard>Mastercard</label>
+                        </li>
+                    </ol>
+                </fieldset>
+                </li>
+                <li>
+                    <label for=cardnumber>Card Number</label>
+                    <input id=cardnumber name=cardnumber type=number placeholder="Cardnumber" required />
+                </li><br>
+                <li>
+                    <label for=valid>Valid Till</label>
+                    <input id=valid name=valid type=month placeholder="valid till" required />
+                </li><br>
+                <li>
+                    <label for=secure>Security Code</label>
+                    <input id=secure name=secure placeholder="Security Code" type="password" required />
+                </li><br>
+                <li>
+                    <label for=namecard>Name on Card</label>
+                    <input id=namecard name=namecard type=text placeholder="Exact name as on the card" required />
+                </li><br>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <button type=submit>Pay Now</button>
+            <button type=submit><a href="sucess.html">Proceed</a></button><br>
+            <p>**Please click on Proceed after Pay Now.</p>
+        </fieldset>
+    </form>
+</section>
+
+</body>
+</html>
